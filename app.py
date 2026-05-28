@@ -13,7 +13,7 @@ st.set_page_config(
 # 2. Secure ML Artifact Loading
 @st.cache_resource
 def load_artifacts():
-    model_filename = 'battery_rul_rf_model.pkl' 
+    model_filename = 'battery_rul_et_model.pkl' 
     transformer_filename = 'power_transformer.pkl'
     
     model = joblib.load(model_filename)
@@ -24,7 +24,7 @@ try:
     model, transformer = load_artifacts()
 except FileNotFoundError:
     st.error("""
-    ⚠️ **Required Artifact Files Not Found!** Ensure both **`battery_rul_rf_model.pkl`** and **`power_transformer.pkl`** are saved inside this exact directory.
+    ⚠️ **Required Artifact Files Not Found!** Ensure both **`battery_rul_et_model.pkl`** and **`power_transformer.pkl`** are saved inside this exact directory.
     """)
     st.stop()
 
