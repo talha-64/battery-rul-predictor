@@ -106,7 +106,7 @@ st.sidebar.caption("🎓 **Developer:** Muhammad Talha / B-29450]")
 
 # 4. Main Panel Display Construction
 st.title("🔋 Industrial Battery Remaining Useful Life (RUL) Predictor")
-st.markdown("An advanced AI prognostics dashboard powered by an optimized **Random Forest Ensemble** architecture.")
+st.markdown("An advanced AI prognostics dashboard powered by an optimized **Extra Trees Ensemble** architecture.")
 st.write("---")
 
 # =====================================================================
